@@ -1,0 +1,33 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ARGC_CHECK	head.h	35;"	d
+CC	Makefile	/^CC:=gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS:=-g -Wall -lcrypt -lcrypto$/;"	m
+ELF	Makefile	/^ELF:=client$/;"	m
+ERROR_CHECK	head.h	36;"	d
+OBJS	Makefile	/^OBJS:=$(patsubst %.c,%.o,$(SRCS))$/;"	m
+SRCS	Makefile	/^SRCS:=$(wildcard *.c)$/;"	m
+STR_LEN	getsalt.c	2;"	d	file:
+THREAD_ERROR_CHECK	head.h	37;"	d
+Train_t	head.h	/^}Train_t;$/;"	t	typeref:struct:__anon1
+__HEAD_H__	head.h	2;"	d
+anasy	anasy.c	/^int anasy(char* opbuf,int len,char* buf1,char* buf2)$/;"	f
+buf	head.h	/^    char buf[4096];$/;"	m	struct:__anon1
+commandFunc	command.c	/^int commandFunc(int socketFd)$/;"	f
+compute_file_md5	md5.c	/^int compute_file_md5(FILE *fp,char* file_md5)$/;"	f
+dataLen	head.h	/^    int dataLen;$/;"	m	struct:__anon1
+download	tran_file.c	/^int download(int psocketFd)\/\/接收端$/;"	f
+filename	head.h	/^    char filename[128];$/;"	m	struct:__anon2
+filetype	head.h	/^    char filetype[1];$/;"	m	struct:__anon2
+getsalt	getsalt.c	/^int getsalt(char* salt)$/;"	f
+ls_t	head.h	/^}ls_t,*pls_t;$/;"	t	typeref:struct:__anon2
+main	main.c	/^int main(int argc,char* argv[])$/;"	f
+pls_t	head.h	/^}ls_t,*pls_t;$/;"	t	typeref:struct:__anon2
+recvCycle	tran_n.c	/^int recvCycle(int newFd,void* p,int len)$/;"	f
+sendCycle	tran_n.c	/^int sendCycle(int newFd,void* p,int len)$/;"	f
+size	head.h	/^    int size;$/;"	m	struct:__anon2
+tranFile	tran_file.c	/^int tranFile(int newFd,char* buf2)\/\/发送端$/;"	f

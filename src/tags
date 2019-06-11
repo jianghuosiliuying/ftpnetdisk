@@ -1,0 +1,102 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ARGC_CHECK	head.h	34;"	d
+CC	Makefile	/^CC:=gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS:=-g -Wall -pthread -I \/usr\/include\/mysql\/ -lmysqlclient$/;"	m
+Dir_t	head.h	/^}Dir_t,*pDir_t;$/;"	t	typeref:struct:__anon4
+ELF	Makefile	/^ELF:=netdiskserver$/;"	m
+ERROR_CHECK	head.h	35;"	d
+FILENAME	head.h	37;"	d
+File_t	head.h	/^}File_t,*pFile_t;$/;"	t	typeref:struct:file
+ID	head.h	/^    int ID;$/;"	m	struct:__anon5
+Node_t	work_que.h	/^}Node_t,*pNode_t;\/\/元素结构体，存储实际client fd$/;"	t	typeref:struct:node
+OBJS	Makefile	/^OBJS:=$(patsubst %.c,%.o,$(SRCS))$/;"	m
+Person_t	head.h	/^}Person_t,*pPerson_t;$/;"	t	typeref:struct:__anon5
+SRCS	Makefile	/^SRCS:=$(wildcard *.c)$/;"	m
+THREAD_ERROR_CHECK	head.h	36;"	d
+Train_t	head.h	/^}Train_t;$/;"	t	typeref:struct:__anon3
+__FACTORY_H__	factory.h	2;"	d
+__HEAD_H__	head.h	2;"	d
+__MYSQL_H__	mysql.h	2;"	d
+__WORK_QUE_H__	work_que.h	2;"	d
+belong	head.h	/^    int belong;$/;"	m	struct:file
+buf	head.h	/^    char buf[4096];$/;"	m	struct:__anon3
+buf2	head.h	/^    char buf2[128];$/;"	m	struct:__anon7
+checkname	login.c	/^int checkname(char* logbuf,Person_t* pperson)$/;"	f
+childFd	head.h	/^    int childFd;$/;"	m	struct:__anon4
+childthread	head.h	/^}childthread,*pchildthread;$/;"	t	typeref:struct:__anon7
+cleanup	main.c	/^void cleanup(void* p)$/;"	f
+cnt	main.c	/^int cnt=0;$/;"	v
+code	head.h	/^    int code;$/;"	m	struct:__anon4
+code	head.h	/^    int code;$/;"	m	struct:file
+commandFunc	command.c	/^int commandFunc(int key,int newFd,char* buf2,Dir_t* pdir,Dir_t* ppredir,Dir_t* ptmpdir,int ID)$/;"	f
+cond	factory.h	/^    pthread_cond_t cond;\/\/条件变量$/;"	m	struct:__anon1
+confhandle	main.c	/^int confhandle(int fd,char* ip,char* port,int* thread_num,int* capacity)$/;"	f
+cryptcode	head.h	/^    char cryptcode[200];$/;"	m	struct:__anon5
+dataLen	head.h	/^    int dataLen;$/;"	m	struct:__anon3
+deletefile	delete.c	/^int deletefile(char* table,char* comdition)$/;"	f
+dirInit	factory.c	/^void dirInit(Dir_t* pdir,int* newFd)$/;"	f
+download	tran_file.c	/^int download(int socketFd,int fd,off_t truesize)\/\/接收方$/;"	f
+exitFds	main.c	/^int exitFds[2];$/;"	v
+factoryInit	factory.c	/^void factoryInit(pfactory_t pf,int thread_num,int capatory)$/;"	f
+factoryStart	main.c	/^void factoryStart(pfactory_t pf)$/;"	f
+factory_t	factory.h	/^}factory_t,*pfactory_t;$/;"	t	typeref:struct:__anon1
+file	head.h	/^typedef struct file{$/;"	s
+fileInit	factory.c	/^void fileInit(File_t* pfile)$/;"	f
+fileInsert	insert.c	/^int fileInsert(char* table,char* aimthing,char* condition)$/;"	f
+filename	head.h	/^    char filename[128];$/;"	m	struct:__anon6
+filename	head.h	/^    char filename[128];$/;"	m	struct:file
+filetype	head.h	/^    char filetype[1];$/;"	m	struct:__anon6
+filetype	head.h	/^    char filetype[1];$/;"	m	struct:file
+key	head.h	/^    int key;$/;"	m	struct:__anon7
+ls_t	head.h	/^}ls_t,*pls_t;$/;"	t	typeref:struct:__anon6
+main	main.c	/^int main(int argc,char* argv[])$/;"	f
+md5	head.h	/^    char md5[50];$/;"	m	struct:file
+mutex	work_que.h	/^    pthread_mutex_t mutex;$/;"	m	struct:__anon2
+name	head.h	/^    char name[200];$/;"	m	struct:__anon5
+newFd	work_que.h	/^    int newFd;$/;"	m	struct:node
+node	work_que.h	/^typedef struct node{$/;"	s
+pDir_t	head.h	/^}Dir_t,*pDir_t;$/;"	t	typeref:struct:__anon4
+pFile_t	head.h	/^}File_t,*pFile_t;$/;"	t	typeref:struct:file
+pNext	head.h	/^    struct file* pNext;$/;"	m	struct:file	typeref:struct:file::file
+pNext	work_que.h	/^    struct node* pNext;$/;"	m	struct:node	typeref:struct:node::node
+pNode_t	work_que.h	/^}Node_t,*pNode_t;\/\/元素结构体，存储实际client fd$/;"	t	typeref:struct:node
+pPerson_t	head.h	/^}Person_t,*pPerson_t;$/;"	t	typeref:struct:__anon5
+path	head.h	/^    char path[128];$/;"	m	struct:__anon4
+pchildthread	head.h	/^}childthread,*pchildthread;$/;"	t	typeref:struct:__anon7
+personInit	factory.c	/^void personInit(Person_t* pperson)$/;"	f
+personInsert	insert.c	/^int personInsert(char* aimthing,char* table,char* condition)$/;"	f
+pfactory_t	factory.h	/^}factory_t,*pfactory_t;$/;"	t	typeref:struct:__anon1
+pls_t	head.h	/^}ls_t,*pls_t;$/;"	t	typeref:struct:__anon6
+pque_t	work_que.h	/^}que_t,*pque_t;\/\/描述队列的结构体$/;"	t	typeref:struct:__anon2
+precode	head.h	/^    int precode;$/;"	m	struct:file
+pthid	factory.h	/^    pthread_t *pthid;\/\/存储线程ID的起始地址$/;"	m	struct:__anon1
+que	factory.h	/^    que_t que;\/\/生产者和消费者操作队列$/;"	m	struct:__anon1
+queGet	work_que.c	/^int queGet(pque_t pq,pNode_t* pdelete)\/\/get到任务，将其从任务队列头部删除$/;"	f
+queInit	work_que.c	/^void queInit(pque_t pq,int capacity)$/;"	f
+queInsert	work_que.c	/^void queInsert(pque_t pq,pNode_t pnew)$/;"	f
+que_capacity	work_que.h	/^    int que_capacity;$/;"	m	struct:__anon2
+que_head	work_que.h	/^    pNode_t que_head,que_tail;$/;"	m	struct:__anon2
+que_size	work_que.h	/^    int que_size;$/;"	m	struct:__anon2
+que_t	work_que.h	/^}que_t,*pque_t;\/\/描述队列的结构体$/;"	t	typeref:struct:__anon2
+que_tail	work_que.h	/^    pNode_t que_head,que_tail;$/;"	m	struct:__anon2
+query1	login.c	/^int query1(char* aim,char* table,char* condition,Person_t** pperson)$/;"	f
+query2	login.c	/^int query2(char* aim,char* table,char* condition,pFile_t* pphead,pFile_t* pptail)$/;"	f
+recvCycle	tran_n.c	/^int recvCycle(int newFd,void* p,int len)$/;"	f
+registeruser	register.c	/^int registeruser(int newFd,Person_t* pperson)$/;"	f
+root	head.h	/^    char root[128];$/;"	m	struct:__anon4
+salt	head.h	/^    char salt[200];$/;"	m	struct:__anon5
+sendCycle	tran_n.c	/^int sendCycle(int newFd,void* p,int len)$/;"	f
+sigFuncExit	main.c	/^void sigFuncExit(int signum)$/;"	f
+size	head.h	/^    int size;$/;"	m	struct:__anon6
+size	head.h	/^    int size;$/;"	m	struct:file
+startFlag	factory.h	/^    short startFlag;\/\/工厂启动标志$/;"	m	struct:__anon1
+tcpInit	tcpInit.c	/^int tcpInit(int* pSocketFd,char* ip,char* port)$/;"	f
+threadFunc	main.c	/^void* threadFunc(void* p)$/;"	f
+thread_num	factory.h	/^    int thread_num;\/\/要创建的线程数目$/;"	m	struct:__anon1
+tranFile	tran_file.c	/^int tranFile(int newFd,char* buf2,char* md5)\/\/发送端$/;"	f
+userID	work_que.h	/^    int userID;$/;"	m	struct:node
